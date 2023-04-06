@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/css.css">
+    <script src="js/main.js" defer></script>
+    <title>Comunidad en línea</title>
+</head>
+<body>
+    <div class="contenedor-pr">
+        <form id="formulario" action="php/login.php" method="post" class="formulario">
+            <img class="logo-utbb"src="imagenes/logo-utbb.png" alt="Logo UTBB">
+            <label for="nombreUsuario">Nombre de usuuario</label>
+            <input type="text" name="usuario" placeholder="Jhon123" id="nombreUsuario" class="formulario-input formulario-estado-mal">
+            <label for="passwordUsuario">Contraseña</label>
+            <input type="password" name="password" id="passwordUsuario" class="formulario-input formulario-estado-mal">
+            <div class="formulario-p formulario-p-oculto"><p>Contraseña o nombre de usuario incorrectas</p></div>
+            <input type="submit" value="Iniciar Sesión" class="formulario-boton">
+        </form>
+    </div>
+</body>
+</html>

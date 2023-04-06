@@ -1,0 +1,464 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Inicio de sesión (index) */
+
+/* Inicio formulario (index-alumnos) */
+
+.contenedor-pr
+{
+    width: 100vw;
+    height:100vh;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* margin: 110px auto; */
+    background-color: #C0C0C0;
+    /* border-radius: 10px; */
+}
+
+.formulario
+{
+    width: 30%;
+    height: 60%;
+    background-color: #E0E0E0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 13px;
+    border-radius:5px ;
+    position: relative;
+}
+
+.formulario .formulario-input
+{
+    width: 60%;
+    height: 9%;
+    border-radius: 5px;
+    border: 3px solid transparent;
+    transition: .3s ease all;
+}
+
+.formulario .formulario-input:focus
+{
+    border: 3px solid #0075ff;
+    outline: none;
+    box-shadow: 3px 0px 30px rgba(163,163,163, 0.4);
+}
+
+.formulario .formulario-boton
+{
+    width: 60%;
+    height: 7%;
+    border-radius: 5px;
+    border: none;
+}
+
+
+.formulario .formulario-boton:hover
+{
+    background-color: rgba(0, 0, 0, 0.308);
+    color: white;
+    cursor: pointer;
+    border: 1px solid white;
+}
+
+
+.formulario .formulario-p
+{
+    height: 10%;
+    width: 80%;
+    display: block;
+    padding:10px 15px;
+    border-radius: 5px;
+    background-color: #FF3333;
+    font-size: 1.0em;
+}
+
+.formulario .formulario-p-oculto
+{
+    display: none;
+}
+
+.logo-utbb
+{
+    width: 40%;
+    height: 40%;
+    position: absolute;
+    right: 30%;
+    top: -20%;
+    z-index:10;
+}
+
+/* Logo login del index-administrador */
+.logo-login
+{
+    width: 25%;
+    height: 25%;
+    position: absolute;
+    right: 38%;
+    top: -15%;
+    z-index:10;
+}
+
+
+/* Fin formulario (index-alumnos) */
+
+/* formulario de registro de administradores */
+
+.contenedor-formulario
+{
+    width: 100%;
+    height: 100vh;
+    background-color: #c0c0c0a2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+h1
+{
+    margin-bottom: 5px;
+}
+
+.contenedor-formulario .formularioadmin
+{
+    /* background-color: #0075ff; */
+    width: 60%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    flex-direction: column;
+}
+
+.contenedor-formulario .formularioadmin .inputs
+{
+    width: 80%;
+    height: 50px;
+    border: none;
+    border-radius:10px;
+}
+
+.contenedor-formulario .formularioadmin .input-submit
+{
+    width: 60%;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+}
+
+
+/* Index-logueado */
+
+/* Inicio de menú de navegación */
+
+header 
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #008849;
+}
+
+.menuresponsive
+{
+    width: 3%;
+    height: 40px;
+    background-image: url(../imagenes/hambugermenu.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: none;
+}
+
+.ol 
+{
+    display: flex;
+    align-items: center;
+}
+li 
+{
+    list-style: none;
+    cursor: pointer;
+    padding: 1.5vw;
+    transition:  all .3s ease 0s;
+}
+
+li > a 
+{
+    text-decoration: none;
+    color: black;
+}
+
+li:hover 
+{
+    background-color: white;
+    border-radius: 5px;
+}
+.sub-ol 
+{
+    display: none;
+    position: absolute;
+    margin-top: 1.5vw;
+}
+
+.sub-ol > li 
+{
+    width: 173px;
+    transform: translateX(-20px);
+    border-bottom:solid 1px #fff ;
+    text-align: center;
+    background-color: #008849;
+}
+.sub-ol > li:hover 
+{
+    background-color: white;
+    border-radius: 5px;
+}
+
+.li:hover > .sub-ol
+{
+    display: block;
+}
+/* Fin de menú de navegación */
+
+
+/* Inicio de tabla */
+.tabla-oculta
+{
+    display: none;
+}
+.main
+{
+    margin: 10px auto;
+    width: 600px;
+}
+.main .form
+{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.main .form .buscador
+{
+    width: 80%;
+    height: 30px;
+    border: solid 2px black;
+    border-radius: 10px;
+    padding: 0 5px;
+    margin-bottom: 10px;
+}
+.main .buscador:focus
+{
+    border: 3px solid #0075ff;
+    outline: none;
+    box-shadow: 3px 0px 30px rgba(163,163,163, 0.4);
+}
+
+.main .form .btn-buscar
+{
+    width: 10%;
+    height: 30px;
+    border-radius: 5px;
+    
+}
+
+table
+{
+    width: 100%;
+    background-color: white;
+    text-align: left;
+    border-collapse: collapse;
+}
+
+th, td
+{
+    padding: 20px 5px;
+}
+thead
+{
+    background-color: #008849;
+    color: white;
+    border-bottom: solid 5px #0F362D;
+}
+tr:nth-child(even)
+{
+    background-color: #ddd;
+}
+
+tr:hover td
+{
+    background-color: #008849;
+    color: white;
+}
+/* Fin de tabla */
+
+/* Inicio imagenes en la tabla resultado */
+
+.imagenes-muestra-tabla
+{
+    width: 30vw;
+    height: 30vh;
+}
+
+/* Fin imagenes en la tabla resultado */
+
+/* @media screem, adaptación a pantallas */
+
+@media screen and (max-width: 360px) {
+    /* Formulario index-alumnos */
+.formulario
+{
+    width: 100%;
+    height: 100%;
+    background-color:#E0E0E0;;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 13px;
+    border-radius:5px ;
+    position: relative;
+}
+.formulario .formulario-input
+{
+    width: 80%;
+    height: 5%;
+    border-radius: 5px;
+    border: 3px solid transparent;
+    transition: .3s ease all;
+}
+
+
+
+.formulario .formulario-boton
+{
+    width: 60%;
+    height: 5%;
+    border-radius: 5px;
+    border: none;
+}
+
+.logo-utbb
+{
+    width: 40%;
+    height: 40%;
+    position: absolute;
+    right: 30%;
+    top: -5%;
+    z-index:10;
+}
+
+/* Fin formulario index-alumnos */
+
+/* Inicio de menú de navegación */
+
+.mostrado
+{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    background-color: #008849;
+    /* transition: .3s all ease; */
+    transform: translateY(-100%);
+}
+
+.nomostrado 
+{
+    /* display: none;   */
+    transform: translateY(0);
+}
+nav
+{
+    /* background-color:#0075ff; */
+    width: 100%;
+}
+.ol 
+{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+ li 
+{ 
+    list-style: none;
+    cursor: pointer;
+    padding: 1.5vw;
+    transition:  all .3s ease 0s;
+}
+
+a
+{
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+li > a 
+{
+    text-decoration: none;
+    color: black;
+    
+}
+
+li:hover {
+    background-color: white;
+    border-radius: 5px;
+}
+.sub-ol {
+    display: none;
+    position: absolute;
+    margin-top: 1.5vw;
+}
+
+.sub-ol > li {
+    width: 173px;
+    transform: translateX(-20px);
+    border-bottom:solid 1px #fff ;
+    text-align: center;
+    background-color: #008849;
+}
+.sub-ol > li:hover {
+    background-color: white;
+    border-radius: 5px;
+}
+
+li:hover > .sub-ol {
+    display: block;
+}
+
+.menuresponsive
+{
+    width: 20vw;
+    height: 75px;
+    background-image: url(../imagenes/hambugermenu.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    position: absolute;
+    z-index: 1;
+    top: -10px;
+    right: 0px;
+    display: flex;
+}
+
+
+.menuresponsive, img:hover
+{
+    cursor:pointer;
+}
+
+}
+
+/* Fin de menú de navegación */
